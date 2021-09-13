@@ -1,0 +1,7 @@
+<div class="container" id="assignment2">
+    <h4>Assignment 2</h4>
+    <label>Add User</label>
+    <input name="username" type="text" placeholder="Username" [(ngModel)]="username" (keyup)="isUserEmpty($event)">
+    <p> {{ username }}</p>
+    <button class="btn btn-success" [disabled]="emptyUsername" (click)="submitUser()">Add User</button>
+</div>

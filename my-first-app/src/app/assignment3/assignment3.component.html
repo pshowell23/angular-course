@@ -1,0 +1,6 @@
+<div class="container" id="assignment3">
+    <h4>Assignment 3</h4>
+    <button class="btn btn-primary" (click)="showDetails()">{{ buttonWording }}</button>
+    <p *ngIf="display">Wanna know a secret? The password is {{ password }}.</p>
+    <p *ngFor="let click of clicks" [ngClass]="{ gt: click > 4 }">{{ click }}</p>
+</div>
