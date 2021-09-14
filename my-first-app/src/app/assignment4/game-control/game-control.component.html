@@ -1,0 +1,6 @@
+<button class="btn btn-success" (click)="startGame()" [disabled]="clicked">Start Game</button>
+<button class="btn btn-danger" (click)="endGame()" [disabled]="!clicked">End Game</button>
+<div class="row" *ngFor="let number of counts">
+    <div *ngIf="number%2==1"><app-odd><p>Odd - {{number}}</p></app-odd></div>
+    <div *ngIf="number%2==0"><app-even><p>Even - {{number}}</p></app-even></div>
+</div>
